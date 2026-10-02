@@ -25,7 +25,7 @@ Each example:
 | 02 | Diet / feed blending | MathOpt + GLOP | LP bounds, infeasibility diagnosis |
 | 03 | Knapsack and multiple knapsack | Knapsack solver, CP-SAT | Same problem, two solvers |
 | 04 | Assignment | `linear_sum_assignment`, CP-SAT | Specialized vs general solvers |
-| 05 | Supply chain network flow | Min-cost flow, max flow | Graph models, bottlenecks |
+| 05 | [Supply chain network flow](examples/ex05_network_flow/) | SimpleMaxFlow, SimpleMinCostFlow | Max flow, min cut, bottleneck upgrades, node potentials |
 | 06 | Facility location | MathOpt + SCIP/HiGHS | MIP, strong formulations, gaps and bounds |
 | 07 | Sudoku and N-Queens | CP-SAT | Constraint satisfaction, enumerating solutions |
 | 08 | Graph coloring / exam timetabling | CP-SAT | Symmetry breaking |
