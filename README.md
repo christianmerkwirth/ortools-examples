@@ -28,7 +28,7 @@ Each example:
 | 05 | [Supply chain network flow](examples/ex05_network_flow/) | SimpleMaxFlow, SimpleMinCostFlow | Max flow, min cut, bottleneck upgrades, node potentials |
 | 06 | [Facility location](examples/ex06_facility_location/) | MathOpt + HiGHS/SCIP | Binary variables, weak vs strong formulations, MIP gaps and bounds |
 | 07 | [Sudoku and N-Queens](examples/ex07_sudoku_nqueens/) | CP-SAT | AllDifferent, uniqueness proofs, enumerating all solutions |
-| 08 | Graph coloring / exam timetabling | CP-SAT | Symmetry breaking |
+| 08 | [Exam timetabling](examples/ex08_exam_timetabling/) | CP-SAT | Graph coloring, two encodings, symmetry breaking, clique/DSATUR bounds |
 | 09 | [Employee shift scheduling](examples/ex09_shift_scheduling/) | CP-SAT | Boolean grid models, penalty literals, min-max fairness, lexicographic objectives |
 | 10 | [Job shop scheduling](examples/ex10_job_shop/) | CP-SAT | Interval variables, `NoOverlap`, makespan vs tardiness, critical path, Gantt charts |
 | 11 | [Project scheduling (RCPSP)](examples/ex11_project_scheduling/) | CP-SAT | `add_cumulative`, critical path vs resource limits, bottleneck what-if |
