@@ -30,7 +30,7 @@ Each example:
 | 07 | [Sudoku and N-Queens](examples/ex07_sudoku_nqueens/) | CP-SAT | AllDifferent, uniqueness proofs, enumerating all solutions |
 | 08 | Graph coloring / exam timetabling | CP-SAT | Symmetry breaking |
 | 09 | Employee shift scheduling | CP-SAT | Boolean models, soft constraints, fairness |
-| 10 | Job shop scheduling | CP-SAT | Interval variables, `NoOverlap`, Gantt charts |
+| 10 | [Job shop scheduling](examples/ex10_job_shop/) | CP-SAT | Interval variables, `NoOverlap`, makespan vs tardiness, critical path, Gantt charts |
 | 11 | Project scheduling (RCPSP) | CP-SAT | `Cumulative` resources, precedences |
 | 12 | Traveling salesperson | Routing library | Search strategies, guided local search |
 | 13 | Vehicle routing with time windows | Routing library | Capacity and time dimensions |
