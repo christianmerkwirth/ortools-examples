@@ -27,7 +27,7 @@ Each example:
 | 04 | Assignment | `linear_sum_assignment`, CP-SAT | Specialized vs general solvers |
 | 05 | [Supply chain network flow](examples/ex05_network_flow/) | SimpleMaxFlow, SimpleMinCostFlow | Max flow, min cut, bottleneck upgrades, node potentials |
 | 06 | Facility location | MathOpt + SCIP/HiGHS | MIP, strong formulations, gaps and bounds |
-| 07 | Sudoku and N-Queens | CP-SAT | Constraint satisfaction, enumerating solutions |
+| 07 | [Sudoku and N-Queens](examples/ex07_sudoku_nqueens/) | CP-SAT | AllDifferent, uniqueness proofs, enumerating all solutions |
 | 08 | Graph coloring / exam timetabling | CP-SAT | Symmetry breaking |
 | 09 | Employee shift scheduling | CP-SAT | Boolean models, soft constraints, fairness |
 | 10 | Job shop scheduling | CP-SAT | Interval variables, `NoOverlap`, Gantt charts |
