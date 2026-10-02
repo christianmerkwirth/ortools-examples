@@ -26,7 +26,7 @@ Each example:
 | 03 | Knapsack and multiple knapsack | Knapsack solver, CP-SAT | Same problem, two solvers |
 | 04 | [Assignment](examples/ex04_assignment/) | `linear_sum_assignment`, CP-SAT | Specialized vs general solvers, dual potentials as proof, pricing side rules |
 | 05 | [Supply chain network flow](examples/ex05_network_flow/) | SimpleMaxFlow, SimpleMinCostFlow | Max flow, min cut, bottleneck upgrades, node potentials |
-| 06 | Facility location | MathOpt + SCIP/HiGHS | MIP, strong formulations, gaps and bounds |
+| 06 | [Facility location](examples/ex06_facility_location/) | MathOpt + HiGHS/SCIP | Binary variables, weak vs strong formulations, MIP gaps and bounds |
 | 07 | [Sudoku and N-Queens](examples/ex07_sudoku_nqueens/) | CP-SAT | AllDifferent, uniqueness proofs, enumerating all solutions |
 | 08 | Graph coloring / exam timetabling | CP-SAT | Symmetry breaking |
 | 09 | [Employee shift scheduling](examples/ex09_shift_scheduling/) | CP-SAT | Boolean grid models, penalty literals, min-max fairness, lexicographic objectives |
