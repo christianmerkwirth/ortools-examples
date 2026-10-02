@@ -1,6 +1,6 @@
 # Plan: OR-Tools Python Examples
 
-Status: approved plan. Example 01 is done and is the reference for the rest. Decisions are recorded in [Decisions](#decisions).
+Status: examples 01–12 are done. Examples 13–16 are next. Decisions are recorded in [Decisions](#decisions).
 
 ## Goal
 

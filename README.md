@@ -23,7 +23,7 @@ Each example:
 | -- | ------- | ------ | --------- |
 | 01 | [Production planning](examples/ex01_production_planning/) | MathOpt + GLOP | LP basics, shadow prices, reduced costs, what-if analysis |
 | 02 | [Feed blending](examples/ex02_feed_blending/) | MathOpt + GLOP | Ranged constraints, infeasibility diagnosis (IIS, elastic model), Farkas proofs |
-| 03 | Knapsack and multiple knapsack | Knapsack solver, CP-SAT | Same problem, two solvers |
+| 03 | [Knapsack and multiple knapsack](examples/ex03_knapsack/) | Knapsack solver, CP-SAT | Same problem, two solvers, scaling, side rules, DP referee |
 | 04 | [Assignment](examples/ex04_assignment/) | `linear_sum_assignment`, CP-SAT | Specialized vs general solvers, dual potentials as proof, pricing side rules |
 | 05 | [Supply chain network flow](examples/ex05_network_flow/) | SimpleMaxFlow, SimpleMinCostFlow | Max flow, min cut, bottleneck upgrades, node potentials |
 | 06 | [Facility location](examples/ex06_facility_location/) | MathOpt + HiGHS/SCIP | Binary variables, weak vs strong formulations, MIP gaps and bounds |
@@ -38,7 +38,7 @@ Each example:
 | 15 | Cutting stock | MathOpt + CP-SAT | Column generation |
 | 16 | Sports league scheduling | CP-SAT | Large combinatorial models |
 
-Examples without a link are planned. See [PLAN.md](PLAN.md).
+Examples 13–16 are planned. See [PLAN.md](PLAN.md).
 
 ## Quick start
 
