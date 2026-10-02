@@ -22,7 +22,7 @@ Each example:
 | #  | Example | Solver | You learn |
 | -- | ------- | ------ | --------- |
 | 01 | [Production planning](examples/ex01_production_planning/) | MathOpt + GLOP | LP basics, shadow prices, reduced costs, what-if analysis |
-| 02 | Diet / feed blending | MathOpt + GLOP | LP bounds, infeasibility diagnosis |
+| 02 | [Feed blending](examples/ex02_feed_blending/) | MathOpt + GLOP | Ranged constraints, infeasibility diagnosis (IIS, elastic model), Farkas proofs |
 | 03 | Knapsack and multiple knapsack | Knapsack solver, CP-SAT | Same problem, two solvers |
 | 04 | Assignment | `linear_sum_assignment`, CP-SAT | Specialized vs general solvers |
 | 05 | [Supply chain network flow](examples/ex05_network_flow/) | SimpleMaxFlow, SimpleMinCostFlow | Max flow, min cut, bottleneck upgrades, node potentials |
