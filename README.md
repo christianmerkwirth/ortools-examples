@@ -31,7 +31,7 @@ Each example:
 | 08 | Graph coloring / exam timetabling | CP-SAT | Symmetry breaking |
 | 09 | [Employee shift scheduling](examples/ex09_shift_scheduling/) | CP-SAT | Boolean grid models, penalty literals, min-max fairness, lexicographic objectives |
 | 10 | [Job shop scheduling](examples/ex10_job_shop/) | CP-SAT | Interval variables, `NoOverlap`, makespan vs tardiness, critical path, Gantt charts |
-| 11 | Project scheduling (RCPSP) | CP-SAT | `Cumulative` resources, precedences |
+| 11 | [Project scheduling (RCPSP)](examples/ex11_project_scheduling/) | CP-SAT | `add_cumulative`, critical path vs resource limits, bottleneck what-if |
 | 12 | [Traveling salesperson](examples/ex12_tsp/) | Routing library, CP-SAT | Index manager, search strategies, guided local search, exact `add_circuit` baseline |
 | 13 | Vehicle routing with time windows | Routing library | Capacity and time dimensions |
 | 14 | Bin packing and 2D packing | CP-SAT | `NoOverlap2D`, lower bounds |
