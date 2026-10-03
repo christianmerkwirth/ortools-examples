@@ -1,6 +1,6 @@
 # Plan: OR-Tools Python Examples
 
-Status: all 16 core examples are done. The optional extras (17–19) are open. Decisions are recorded in [Decisions](#decisions).
+Status: all 19 examples (16 core plus 3 extras) are done. Decisions are recorded in [Decisions](#decisions).
 
 ## Goal
 
