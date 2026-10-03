@@ -13,7 +13,7 @@ from dataclasses import dataclass
 
 from ortools.sat.python import cp_model
 
-from .bounds import first_fit_decreasing, grid_size
+from .bounds import first_fit_decreasing, grid_size, strip_lower_bound
 from .data import BinPackingData, StripData
 
 # ---------------------------------------------------------------- Part 1 ---
@@ -164,7 +164,11 @@ def solve_strip_packing(
     max_length = sum(max(p.width, p.height) for p in panels) // g
 
     model = cp_model.CpModel()
-    length = model.new_int_var(0, max_length, "length")
+    # A redundant lower bound: the area/tallest-panel bound. It never cuts
+    # off a valid layout, but it lets CP-SAT stop the moment it finds a
+    # layout that reaches the bound, instead of proving it the hard way.
+    min_length = -(-strip_lower_bound(panels, data.strip_width, allow_rotation) // g)
+    length = model.new_int_var(min_length, max_length, "length")
     x_intervals, y_intervals = [], []
     pos, choice = {}, {}
     for p in panels:

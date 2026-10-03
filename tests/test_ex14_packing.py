@@ -176,7 +176,9 @@ def test_panel_wider_than_the_roll():
     data = StripData("too wide", (Panel("banner", 130, 10, can_rotate=False),), 120)
     with pytest.raises(ValueError):
         strip_lower_bound(data.panels, data.strip_width)
-    with pytest.raises(RuntimeError):
+    # The model checks the bound first, so it rejects the panel before
+    # any search starts.
+    with pytest.raises(ValueError):
         solve_strip_packing(data)
     # Turned by 90 degrees, the banner fits.
     turnable = StripData("turnable", (Panel("banner", 130, 10),), 120)

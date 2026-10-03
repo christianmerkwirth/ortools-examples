@@ -117,19 +117,22 @@ Things to notice:
 
 - **Scale to the grid.** All sizes are multiples of 10 cm, so the model
   divides them by their greatest common divisor. The domains get 10 times
-  smaller. Over five runs of each, the median solve time with rotation was
-  1.5 s on the 10 cm grid and 7.6 s on a 1 cm grid
-  (`--compare-grid` shows one run). The optimum does not change; see the
-  grid bound below.
+  smaller, which usually helps the search. Here the redundant bound (next
+  point) already makes both grids fast: in our runs, rotation took
+  0.2–0.7 s on either grid (`--compare-grid` shows one run). The optimum
+  does not change; see the grid bound below.
 - **Reproducible comparisons.** CP-SAT with several workers is not
   deterministic, and wall-clock time depends on the machine. For the
   symmetry comparison we use one worker and a *work limit*
   (`max_deterministic_time`). Then the same run gives the same result on
   any machine.
-- **Parallel workers matter for proofs.** With one worker, CP-SAT finds
-  the 250 cm layout but cannot prove it optimal within 60 s: its bound
-  stays far below. With 8 workers, the portfolio includes workers that
-  push the bound, and the proof takes a second or two.
+- **Give CP-SAT the bound you already know.** The model sets the lower
+  limit of `length` to the area-and-grid bound from `bounds.py`. This
+  rule never removes a valid layout. But once CP-SAT finds a 250 cm
+  layout, the bound proves it optimal at once. Without this line, CP-SAT
+  had to prove the bound by search: with one worker it could not do so
+  within 60 s, and on a 4-core CI machine it timed out. With the line,
+  the proof takes well under a second, even on 2 cores.
 
 ## Run it
 
@@ -161,8 +164,8 @@ Part 2: 16 panels from a roll 120 cm wide
 
 setting      length cm  our bound  CP-SAT bound  waste  seconds
 -----------  ---------  ---------  ------------  -----  -------
-no rotation        260        250           260  4.8%   0.04
-rotation           250        250           250  1.0%   1.97
+no rotation        260        250           260  4.8%   0.02
+rotation           250        250           250  1.0%   0.26
 ```
 
 The Part 1 table is the same on every machine. In Part 2, the times and
