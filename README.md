@@ -37,6 +37,7 @@ Each example:
 | 14 | [Bin packing and 2D packing](examples/ex14_packing/) | CP-SAT | Symmetry breaking, L1/L2 bounds, `NoOverlap2D`, optional intervals for rotation |
 | 15 | [Cutting stock](examples/ex15_cutting_stock/) | MathOpt (GLOP, HiGHS) + CP-SAT | Column generation, pricing knapsack, Farley bound, price and branch |
 | 16 | [Sports league scheduling](examples/ex16_sports_scheduling/) | CP-SAT | Break theory, circle method, template + draw model, redundant bounds |
+| 17 | [Portfolio selection](examples/ex17_portfolio/) | MathOpt (GLOP, HiGHS) | CVaR as an LP, semi-continuous weights, cardinality limits, efficient frontiers |
 
 See [PLAN.md](PLAN.md) for the design rules behind the examples.
 
