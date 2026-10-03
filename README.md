@@ -35,7 +35,7 @@ Each example:
 | 12 | [Traveling salesperson](examples/ex12_tsp/) | Routing library, CP-SAT | Index manager, search strategies, guided local search, exact `add_circuit` baseline |
 | 13 | Vehicle routing with time windows | Routing library | Capacity and time dimensions |
 | 14 | Bin packing and 2D packing | CP-SAT | `NoOverlap2D`, lower bounds |
-| 15 | Cutting stock | MathOpt + CP-SAT | Column generation |
+| 15 | [Cutting stock](examples/ex15_cutting_stock/) | MathOpt (GLOP, HiGHS) + CP-SAT | Column generation, pricing knapsack, Farley bound, price and branch |
 | 16 | Sports league scheduling | CP-SAT | Large combinatorial models |
 
 Examples 13–16 are planned. See [PLAN.md](PLAN.md).

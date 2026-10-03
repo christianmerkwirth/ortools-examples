@@ -222,7 +222,7 @@ So is the lesson wrong? No. It is just less visible on small models:
   write often decides whether the solver finishes in seconds or not at
   all.
 - Many methods use the LP bound directly: Lagrangian relaxation, column
-  generation (example 15), and LP-based
+  generation ([example 15](../ex15_cutting_stock/)), and LP-based
   heuristics. They see only what you write.
 - Write the strong model, then measure. The extra rows cost you little.
 
