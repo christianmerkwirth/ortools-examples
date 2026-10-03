@@ -34,7 +34,7 @@ Each example:
 | 11 | [Project scheduling (RCPSP)](examples/ex11_project_scheduling/) | CP-SAT | `add_cumulative`, critical path vs resource limits, bottleneck what-if |
 | 12 | [Traveling salesperson](examples/ex12_tsp/) | Routing library, CP-SAT | Index manager, search strategies, guided local search, exact `add_circuit` baseline |
 | 13 | Vehicle routing with time windows | Routing library | Capacity and time dimensions |
-| 14 | Bin packing and 2D packing | CP-SAT | `NoOverlap2D`, lower bounds |
+| 14 | [Bin packing and 2D packing](examples/ex14_packing/) | CP-SAT | Symmetry breaking, L1/L2 bounds, `NoOverlap2D`, optional intervals for rotation |
 | 15 | [Cutting stock](examples/ex15_cutting_stock/) | MathOpt (GLOP, HiGHS) + CP-SAT | Column generation, pricing knapsack, Farley bound, price and branch |
 | 16 | Sports league scheduling | CP-SAT | Large combinatorial models |
 
