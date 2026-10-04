@@ -127,8 +127,10 @@ solver.solve(model, collector)
 
 > **Use one worker for enumeration.** With several workers, each worker
 > searches on its own and reports what it finds. The same solution can
-> then come back more than once. In our test with 8 workers, the callback
-> reported 154 solutions for 8 queens, not 92.
+> then come back more than once, and some may not come back at all. In
+> five runs with 8 workers on OR-Tools 9.15, the callback reported 135 to
+> 156 solutions for 8 queens, of which only 72 to 85 were distinct. The
+> right answer is 92.
 
 **Building a puzzle.** `make_puzzle()` starts from a full grid and visits
 the cells in random order. It blanks each cell and keeps it blank only if

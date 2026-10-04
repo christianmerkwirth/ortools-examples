@@ -76,7 +76,9 @@ the MIP solver uses for its bounds, sees them differently. In the weak row
 a start of 0.5 needs only an *average* of 0.5 "on" over the window. The
 strong rows are the convex hull of the rule for one plant, so no linear
 rows can describe it more tightly. Note also that $v$ and $w$ need not be
-integer: once $u$ is 0/1, the transition row forces them to 0/1.
+integer. The transition row alone does not force them to 0/1 once $u$ is
+0/1: $v = w = 0.5$ also fits it. The startup cost and the strong min
+up/down rows push them to 0/1.
 
 ## The OR-Tools code
 

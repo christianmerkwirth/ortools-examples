@@ -36,7 +36,7 @@ Pattern = tuple[int, ...]  # Number of narrow rolls of each order's width.
 # values by this factor and round. The true worth of the chosen pattern is
 # then recomputed with the exact duals.
 DUAL_SCALE = 1_000_000
-TOL = 1e-9
+TOL = 1e-6  # Loose enough for duals that were scaled and rounded.
 
 
 @dataclass(frozen=True)

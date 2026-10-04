@@ -114,8 +114,9 @@ def build_model(
             on[key] = model.add_variable(
                 lb=0, ub=1, is_integer=integer, name=f"on {key}"
             )
-            # start and stop are 0/1 whenever `on` is 0/1 (they follow from
-            # the transition row below), so they can stay continuous.
+            # start and stop can stay continuous. The transition row alone
+            # does not force them to 0/1 (start = stop = 0.5 also fits), but
+            # the startup cost and the strong min up/down rows do.
             start[key] = model.add_variable(lb=0, ub=1, name=f"start {key}")
             stop[key] = model.add_variable(lb=0, ub=1, name=f"stop {key}")
             power[key] = model.add_variable(lb=0, ub=g.p_max, name=f"power {key}")
