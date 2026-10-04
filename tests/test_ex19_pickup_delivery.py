@@ -83,7 +83,7 @@ def test_cp_sat_bound_is_consistent_with_the_routing_plan(day, day_plan):
     cost of a valid plan. (At this size the bound is too weak to measure
     the gap; the medium instances above do that.)"""
     try:
-        exact = solve_exact(day, time_limit=10)
+        exact = solve_exact(day, time_limit=30)
     except RuntimeError:
         pytest.skip("CP-SAT found no full-day plan in time on this machine")
     assert plan_errors(day, exact) == []

@@ -37,8 +37,10 @@ $$
 $$
 
 The "one single cycle" rule is the hard part. Without it, the cheapest
-answer is a set of small separate loops. Textbook MIP models need an
-exponential number of constraints to forbid them. The routing library
+answer is a set of small separate loops. The classic MIP model (DFJ)
+needs an exponential number of constraints to forbid them. The MTZ model
+in example 13 needs only a polynomial number, but its LP bound is weaker.
+The routing library
 avoids the issue: it works with a *successor* for each stop, so a tour is
 always one path. CP-SAT has a special constraint, `add_circuit`, that
 enforces exactly this rule.
