@@ -5,7 +5,7 @@
 [![OR-Tools](https://img.shields.io/badge/OR--Tools-9.15-orange.svg)](https://developers.google.com/optimization)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 
-**19 tested, documented examples that show how to solve real optimization
+**20 tested, documented examples that show how to solve real optimization
 problems with [Google OR-Tools](https://developers.google.com/optimization)
 in Python.**
 
@@ -87,6 +87,7 @@ Click a name to open the example's README. Each one is a short tutorial.
 | 16 | [Sports league scheduling](examples/ex16_sports_scheduling/README.md) | CP-SAT | Break theory, circle method, template + draw model, redundant bounds |
 | 18 | [Unit commitment](examples/ex18_unit_commitment/README.md) | MathOpt + HiGHS | Time-coupled MIP, tight min up/down rows, reserve, prices from a fixed-plan LP |
 | 19 | [Pickup and delivery](examples/ex19_pickup_delivery/README.md) | Routing library, CP-SAT | Paired stops, same-vehicle and precedence rules, ride-time limits, LIFO |
+| 20 | [Planning under uncertain demand](examples/ex20_stochastic_planning/README.md) | MathOpt + HiGHS | Two-stage stochastic MIP, what-if reruns vs one scenario model, VSS and EVPI, sample size |
 
 ## Where to start
 
@@ -103,6 +104,7 @@ Already know your problem? Find its type below.
 | Logic rules, puzzles, rosters, timetables | [07](examples/ex07_sudoku_nqueens/README.md), [08](examples/ex08_exam_timetabling/README.md), [09](examples/ex09_shift_scheduling/README.md) | CP-SAT |
 | Tasks on machines or crews over time | [10](examples/ex10_job_shop/README.md), [11](examples/ex11_project_scheduling/README.md) | CP-SAT intervals |
 | Vehicles and stops | [12](examples/ex12_tsp/README.md), [13](examples/ex13_vehicle_routing/README.md), [19](examples/ex19_pickup_delivery/README.md) | Routing library |
+| Uncertain demand or costs | [20](examples/ex20_stochastic_planning/README.md), [17](examples/ex17_portfolio/README.md) | MathOpt, scenario models |
 | Flows through a network | [05](examples/ex05_network_flow/README.md) | Graph solvers |
 | Items into boxes, bins, or sheets | [03](examples/ex03_knapsack/README.md), [14](examples/ex14_packing/README.md), [15](examples/ex15_cutting_stock/README.md) | Knapsack solver, CP-SAT, column generation |
 | Workers to jobs, one to one | [04](examples/ex04_assignment/README.md) | `linear_sum_assignment` |
@@ -143,6 +145,7 @@ Every example takes `--plot`. Some examples have more options:
 | 15 | `--kantorovich` | Also solve the direct model (slow) |
 | 16 | `--benchmark` | Compare the two models |
 | 18 | `--benchmark` | Weak vs strong formulation on big fleets |
+| 20 | `--convergence` | Also vary the number of scenarios |
 
 Run any example with `--help` to see all its options.
 

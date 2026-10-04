@@ -1,6 +1,6 @@
 # Plan: OR-Tools Python Examples
 
-Status: all 19 examples (16 core plus 3 extras) are done. Decisions are recorded in [Decisions](#decisions).
+Status: all 20 examples (16 core plus 4 extras) are done. Decisions are recorded in [Decisions](#decisions).
 
 ## Goal
 
@@ -64,6 +64,7 @@ Optional extras, if time allows:
 - 17 Portfolio selection with cardinality limits (MIP, linearized risk).
 - 18 Unit commitment for power plants (MIP, time-coupled constraints).
 - 19 Pickup and delivery routing (routing library, paired visits).
+- 20 Planning under uncertain demand (two-stage stochastic MIP, VSS, EVPI).
 
 ## Folder layout
 
